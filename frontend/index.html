@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja To-Do Aplikacija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Moja To-Do</h1>
+</header>
+
+<main class="layout">
+    <section class="form-section">
+        <div class="form">
+            <label for="ime">Ime naloge:</label>
+            <input type="text" id="ime" placeholder="Vnesite ime naloge" />
+
+            <label for="opis">Opis:</label>
+            <input type="text" id="opis" placeholder="Opis naloge" />
+
+            <label for="rok">Rok:</label>
+            <input type="date" id="rok" />
+
+            <label>
+                <input type="checkbox" id="pomembno" /> Pomembno
+            </label>
+
+            <button onclick="dodajNalogo()">Dodaj nalogo</button>
+        </div>
+    </section>
+
+    <section class="list-section">
+        <div class="list-header">
+            <h2>Seznam</h2>
+            <div class="filter-container">
+                <select id="filterOption" onchange="filtrirajNaloge()">
+                    <option value="">Vse naloge</option>
+                    <option value="opravljeno=true">Opravljene</option>
+                    <option value="opravljeno=false">Neopravljene</option>
+                    <option value="pomembno=true">Pomembne</option>
+                    <option value="sort=asc">Rok - najblizji</option>
+                    <option value="sort=desc">Rok - najdaljsi</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div id="seznam"></div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

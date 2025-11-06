@@ -1,0 +1,172 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fffafb;
+    margin: 0;
+    color: #2e2a2c;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #f9d7e0; /* toplija, svetlija pastelna roze */
+    color: #4b2e36;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ===== LAYOUT (dve kolone) ===== */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+/* ===== LEFT: FORM SECTION ===== */
+.form-section .form {
+    background: #fff;
+    border: 1px solid #f2d5dd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #5e4750;
+}
+
+.form input[type="text"],
+.form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #e0b7c4;
+    margin-top: 4px;
+    transition: border 0.2s ease;
+}
+
+.form input:focus {
+    border-color: #d05b82;
+    outline: none;
+}
+
+.form button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #d05b82;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #b24a6e;
+}
+
+/* ===== RIGHT: TASK LIST ===== */
+.list-section {
+    background: #fff;
+    border: 1px solid #f2d5dd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-header h2 {
+    color: #d05b82;
+    margin: 0;
+    font-size: 20px;
+}
+
+.list-header select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #e0b7c4;
+    color: #4a3a3f;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* ===== TASK ITEM ===== */
+.task {
+    background: #fffdfd;
+    border-left: 4px solid #d05b82;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: 0.2s ease;
+}
+
+.task:hover {
+    background: #fff4f7;
+}
+
+.task strong {
+    display: block;
+    font-size: 15px;
+    color: #3c2b33;
+}
+
+.task small {
+    color: #86646f;
+    font-size: 12px;
+}
+
+.task p {
+    margin: 6px 0;
+    color: #4a3b40;
+    font-size: 14px;
+}
+
+/* ===== CHECKBOX ===== */
+.task input[type="checkbox"] {
+    transform: scale(1.1);
+    margin-right: 6px;
+}
+
+/* ===== DONE ===== */
+.task.done {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #fafafa;
+    opacity: 0.75;
+}
+
+/* ===== DELETE BUTTON ===== */
+.task button {
+    background: #fce0e8;
+    color: #a63c5e;
+    border: 1px solid #f2c5d1;
+    padding: 5px 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.task button:hover {
+    background: #f2c5d1;
+}
+
