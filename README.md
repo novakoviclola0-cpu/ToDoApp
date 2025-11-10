@@ -30,3 +30,6 @@ Podatki se shranjujejo v MySQL podatkovno bazo, backend je zgrajen s Spring Boot
 
 Aplikacija se ustvari na localhost:8080
 
+Autor: Lola Novakovic , Veljko Stojanovic
+Gitrepo:https://github.com/novakoviclola0-cpu/ToDoApp
+
